@@ -1,0 +1,25 @@
+---
+layout: default
+title: Write Yourself a Scheme in Mercury
+---
+
+
+<div id="home">
+  <p>
+  I don't even remember when I started writing the Write Yourself a Scheme
+  tutorial, but I stopped writing it about 6 years ago when I lost my interest
+  in mercury. 
+  </p>
+
+  <p> 
+  You can find parts of the unfinished tutorial below, a finished uncleaned working implementation of the interpreter can be found in the <a href="https://github.com/bartosz-witkowski/write-yourself-a-scheme/tree/master/scratchpad">scratchpad directory of the tutorial repository</a>.
+  </p>
+
+  <h1>Table of contents</h1>
+  <ol class="posts">
+    {% for post in site.categories.write-yourself-a-scheme reversed %}
+      <li> <a href="{{ post.url }}">{{ post.title }}</a> </li>
+    {% endfor %}
+  </ol>
+
+</div>
