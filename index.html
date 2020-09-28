@@ -1,0 +1,44 @@
+---
+layout: default
+title: Bartosz Witkowski
+---
+
+<p>
+    Hi, you're on my personal page. I use it mostly to dump my thoughts in the
+    form of blog posts, and collect some relevant data about myself.
+</p>
+
+<div id="home">
+  <h1> Personal </h1>
+    <ul class="posts">
+      <a href="/about-me.html"> About me </a> <span> (resume, and other information) </span>
+    </ul> 
+
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.categories.blog %}
+      <li> <a href="{{ post.url }}">{{ post.title }}</a> <span>(published: {{ post.date | date_to_string }})</span></li>
+    {% endfor %}
+  </ul>
+
+  <h2> Series </h2>
+   <ul class="posts">
+     <li> <a href="write-yourself-a-scheme/"> Write Yourself a Scheme </a> </li>
+   </ul>
+
+  <h2> Github </h2>
+   My github profile is at <a href='http://github.com/bartosz-witkowski/'> 
+   http://github.com/bartosz-witkowski/</a>. Also see 
+  <a href='/2013/07/21/github.html'> this post </a> for repo descriptions and motivations.
+
+  <h2> Thesis </h2>
+
+  <ul>
+    <li>
+      <a href='files/building-a-solver-for-optimization-problems.pdf'> Bachelor's thesis: ``Building a Solver for Optimization Problems'' (english, pdf) </a>
+    </li>
+    <li>
+      <a href='files/autoencoders-for-image-classification.pdf'> Master's thesis: ``Autoencoders for Image Classification'' (english, pdf) </a>
+    </li>
+  </ul>
+</div>
